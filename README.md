@@ -10,8 +10,10 @@ Spams the thumbs of a review on the site inkakinada.com  Sorry guys. Just wanted
 
 # Example
 
-  ' thumb_url = 'http://www.inkakinada.com/list/thumbprint/city-online-services-limited?review_id=7906&value=1' '
-  ' thumbs_count = 10 '
+```python
+thumb_url = 'http://www.inkakinada.com/list/thumbprint/city-online-services-limited?review_id=7906&value=1'
+thumbs_count = 10
+```
   
 # Execute
 
