@@ -23,16 +23,20 @@
 
 import urllib
 import time
+import sys
 
 #parameters
 thumb_url = 'http://www.inkakinada.com/list/thumbprint/city-online-services-limited?review_id=7906&value=1'
 thumbs_count = 10
 
 start = time.time()
+sys.stdout.write('Starting..')
+sys.stdout.flush()
 
 for i in range(thumbs_count):
-	urllib.urlopen(thumb_url);
-	print 'Thumbs added: ' + str(i+1);
+        urllib.urlopen(thumb_url)
+        sys.stdout.write('\rThumbs added: ' + str(i+1))
+        sys.stdout.flush()
 
 time = time.time() - start
 
